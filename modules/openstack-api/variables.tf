@@ -48,6 +48,12 @@ variable "mysql-router-channel" {
   default     = "8.0/edge"
 }
 
+variable "mysql-router-revision" {
+  description = "Operator channel revision for MySQL router deployment"
+  type        = number
+  default     = 902
+}
+
 variable "scale" {
   description = "Scale of application"
   type        = number
