@@ -367,7 +367,8 @@ module "placement" {
   mysql-router-grafana-dashboard-app    = local.observability-agent-infra-name
   mysql-router-metrics-endpoint-app     = local.observability-agent-infra-name
   resource-configs = merge(var.placement-config, {
-    region = var.region
+    my-option = var.my-option
+    region    = var.region
   })
 }
 

@@ -1252,3 +1252,9 @@ variable "cloudkitty-config" {
   type        = map(string)
   default     = {}
 }
+
+variable "my-option" {
+  description = "My option for placement module"
+  type        = string
+  default     = "default-value"
+}
